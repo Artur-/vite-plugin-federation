@@ -8,7 +8,8 @@ export default {
       filename: "remoteEntry.js",
       exposes: {
         "./Button": "./src/button"
-      }
+      },
+      shared: ['@vaadin/button']
     }),
     nodeResolve()
   ],

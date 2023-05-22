@@ -10,7 +10,8 @@ export default {
     federation({
       remotes: {
         remote_app: "http://localhost:5001/remoteEntry.js",
-      }
+      },
+      shared: ["@vaadin/button"]
     }),
     nodeResolve()
   ],
