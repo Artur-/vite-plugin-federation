@@ -1,4 +1,4 @@
-import '@vaadin/button';
+import('@vaadin/button');
 
 export default function addButton(root){
     const eleBtn = document.createElement("vaadin-button");
