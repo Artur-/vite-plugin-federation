@@ -1,3 +1,4 @@
+import { nodeResolve } from '@rollup/plugin-node-resolve';
 import federation from "@originjs/vite-plugin-federation";
 
 import pkg from "./package.json" assert { type: "json" };
@@ -11,6 +12,7 @@ export default {
         remote_app: "http://localhost:5001/remoteEntry.js",
       }
     }),
+    nodeResolve()
   ],
   output: [{ format: "esm", dir: pkg.main }],
 };

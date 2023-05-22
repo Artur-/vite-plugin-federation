@@ -1,3 +1,4 @@
+import { nodeResolve } from '@rollup/plugin-node-resolve';
 import federation from '@originjs/vite-plugin-federation';
 
 export default {
@@ -9,6 +10,7 @@ export default {
         "./Button": "./src/button"
       }
     }),
+    nodeResolve()
   ],
   output: {
     format: "esm",
