@@ -1,3 +1,4 @@
+import { nodeResolve } from '@rollup/plugin-node-resolve';
 import federation from '@originjs/vite-plugin-federation';
 
 export default {
@@ -7,8 +8,10 @@ export default {
       filename: "remoteEntry.js",
       exposes: {
         "./Button": "./src/button"
-      }
+      },
+      shared: ['@vaadin/button']
     }),
+    nodeResolve()
   ],
   output: {
     format: "esm",

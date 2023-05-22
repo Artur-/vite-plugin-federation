@@ -1,5 +1,7 @@
+import('@vaadin/button');
+
 export default function addButton(root){
-    const eleBtn = document.createElement("button");
+    const eleBtn = document.createElement("vaadin-button");
     const eleText = document.createTextNode("Button from remote");
     eleBtn.appendChild(eleText);
     eleBtn.onclick = function (){

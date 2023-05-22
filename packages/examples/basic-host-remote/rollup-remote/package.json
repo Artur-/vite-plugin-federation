@@ -8,6 +8,10 @@
     "serve": "http-server ./dist -p 5001 --cors='*'"
   },
   "devDependencies": {
-    "rollup": "^3.9.1"
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "rollup": "^3.23.0"
+  },
+  "dependencies": {
+    "@vaadin/button": "24.0.5"
   }
 }
